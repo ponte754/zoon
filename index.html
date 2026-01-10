@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zoon</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">Zoon</div>
+
+        <div class="menu-icon" onclick="toggleMenu()">
+            <i class='bx bx-menu'></i>
+        </div>
+
+        <ul class="nav-link" id="nav-link">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="#pro">المنتجات</a></li>
+        </ul>
+    </nav>
+
+    <div class="cards" id="pro">
+
+        <div class="card">
+            <img src="https://th.bing.com/th/id/OIP.GMltApHHjJ7mU4BsMfsh-gHaHa?w=204&h=204&c=7&r=0&o=7&pid=1.7&rm=3">
+            <h3>سبحة لون ابيض</h3>
+            <p>السعر 100</p>
+            <button onclick="openPopup('سبحة لون ابيض')">اطلب الان</button>
+        </div>
+
+         <div class="card">
+            <img src="https://th.bing.com/th/id/OIP.GMltApHHjJ7mU4BsMfsh-gHaHa?w=204&h=204&c=7&r=0&o=7&pid=1.7&rm=3" >
+            <h3>سبحة لون اسود</h3>
+            <p>السعر 100</p>
+            <button onclick="openPopup('سبحة لون اسود')">اطلب الان</button>
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <form action="https://formspree.io/f/xnjnewzr" class="popup-content" method="post">
+
+         <input type="hidden" id="productName" name="اسم الطلب">
+         <input type="hidden" id="productimg" name=" نوع الطلب">
+            <h2>اتمام الطلب</h2>
+            <input type="text" name="الاسم" placeholder="الاسم الكامل">
+
+            <input type="text" name="رقم الهاتف" placeholder="رقم الهاتف">
+
+            <input type="email" name="الايميل" placeholder="الايميل">
+
+            <input type="text" name="العنوان" placeholder="العنوان الكامل">
+            <textarea name="معلومات اضافية"">معلومات اضافية</textarea>
+            
+            <input type="number" name="الكمية" placeholder="الكمية" min="1" required>
+            <button type="submit">ارسال الطلب</button>
+            
+             <span class="close" onclick="closePoupup()"><i class='bx bx-x'></i></span>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
