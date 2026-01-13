@@ -1,1 +1,162 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
 
+.navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b1b1b;
+    padding: 15px 40px;
+}
+
+.logo{
+    color: #ffff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-link{
+    list-style: none;
+    display: flex;
+}
+
+.nav-link li{
+    margin-left: 20px;
+}
+
+.nav-link a{
+    text-decoration: none;
+    color: #ffff;
+    font-size: 18px;
+}
+
+.nav-link a:hover{
+    color: blueviolet;
+}
+
+.menu-icon{
+    font-size: 28px;
+    color: white;
+    cursor: pointer;
+    display: none;
+   
+}
+
+.bx-menu button{
+    color: #ffff;
+}
+
+.cards{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.card{
+    background: #1b1b1b;
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+img{
+    border-radius: 10px;
+}
+
+.card button{
+    margin-top: 10px;
+    padding: 10px;
+    background: #222;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.popup{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.popup-content{
+    background: #1b1b1b;
+    width: 300px;
+    padding: 20px;
+    margin: 100px auto;
+    position: relative;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: #ffff;
+}
+
+.popup-content input,
+.popup-content button{
+    padding: 10px;
+}
+
+.close{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #ffff;
+}
+
+@media (max-width: 768px){
+    .menu-icon{
+        display: block;
+    }
+
+    .navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b1b1b;
+    padding: 15px 40px;
+}
+
+    .nav-link{
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #222;
+        width: 100%;
+        flex-direction: column;
+        display: none;
+    }
+
+    .nav-link a{
+         color: #fff;
+    }
+
+    .nav-link li{
+        margin: 15px 0;
+        text-align: center;
+    }
+
+    .nav-link.show{
+        display: flex;
+    }
+
+    .cards{
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 15%;
+       
+    }
+}
