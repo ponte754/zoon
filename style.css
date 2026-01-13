@@ -7,14 +7,15 @@
 
 .navbar{
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    background-color: chartreuse;
-    padding: 15px 30px;
+    background-color: #1b1b1b;
+    padding: 15px 40px;
 }
 
 .logo{
-    color: black;
+    color: #ffff;
     font-size: 24px;
     font-weight: bold;
 }
@@ -30,7 +31,7 @@
 
 .nav-link a{
     text-decoration: none;
-    color: black;
+    color: #ffff;
     font-size: 18px;
 }
 
@@ -43,10 +44,11 @@
     color: white;
     cursor: pointer;
     display: none;
+   
 }
 
-.bx-menu{
-    color: black;
+.bx-menu button{
+    color: #ffff;
 }
 
 .cards{
@@ -57,12 +59,17 @@
 }
 
 .card{
-    background: chartreuse;
+    background: #1b1b1b;
     padding: 20px;
     width: 300px;
     text-align: center;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #fff;
+}
+
+img{
+    border-radius: 10px;
 }
 
 .card button{
@@ -82,7 +89,7 @@
 }
 
 .popup-content{
-    background: chartreuse;
+    background: #1b1b1b;
     width: 300px;
     padding: 20px;
     margin: 100px auto;
@@ -91,6 +98,7 @@
     display: flex;
     flex-direction: column;
     gap: 10px;
+    color: #ffff;
 }
 
 .popup-content input,
@@ -103,12 +111,22 @@
     top: 10px;
     right: 10px;
     cursor: pointer;
+    color: #ffff;
 }
 
 @media (max-width: 768px){
     .menu-icon{
         display: block;
     }
+
+    .navbar{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1b1b1b;
+    padding: 15px 40px;
+}
 
     .nav-link{
         position: absolute;
@@ -134,6 +152,11 @@
     }
 
     .cards{
-        
+        display: flex;
+        gap: 20px;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 15%;
+       
     }
 }
