@@ -10,7 +10,6 @@
 <body>
     <nav class="navbar">
         <div class="logo">Zoon</div>
-
         <div class="menu-icon" onclick="toggleMenu()">
             <i class='bx bx-menu'></i>
         </div>
@@ -20,7 +19,7 @@
             <li><a href="#pro">المنتجات</a></li>
         </ul>
     </nav>
-
+    
     <div class="cards" id="pro">
 
         <div class="card">
@@ -39,7 +38,7 @@
     </div>
 
     <div class="popup" id="popup">
-        <form action="https://formspree.io/f/xnjnewzr" class="popup-content" method="post">
+        <form action="https://formspree.io/f/xnjnewzr" class="popup-content" method="post" id="FORMS">
 
          <input type="hidden" id="productName" name="اسم الطلب">
          <input type="hidden" id="productimg" name=" نوع الطلب">
@@ -54,9 +53,12 @@
             <textarea name="معلومات اضافية"">معلومات اضافية</textarea>
             
             <input type="number" name="الكمية" placeholder="الكمية" min="1" required>
+
+         
+
             <button type="submit">ارسال الطلب</button>
             
-             <span class="close" onclick="closePoupup()"><i class='bx bx-x'></i></span>
+             <span class="close" onclick="closePoupup()" onclick="open()"><i class='bx bx-x'></i></span>
 
         </form>
     </div>
