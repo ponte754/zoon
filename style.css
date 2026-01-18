@@ -5,6 +5,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+body{
+    padding-bottom: 60px;
+}
+
 .navbar{
     display: flex;
     width: 100%;
@@ -51,12 +55,14 @@
     color: #ffff;
 }
 
-.cards{
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 50px;
+.cards {
+  display: flex;
+  flex-wrap: wrap; /* يسمح بالانتقال للسطر التالي */
+  gap: 20px;
+  justify-content: center;
+  margin-top: 50px;
 }
+
 
 .card{
     background: #1b1b1b;
@@ -113,7 +119,6 @@ img{
     cursor: pointer;
     color: #ffff;
 }
-
 
 .footer {
     position: fixed;
@@ -180,7 +185,6 @@ img{
     }
 }
 
-
 @media (max-width: 768px){
     .menu-icon{
         display: block;
@@ -227,7 +231,7 @@ img{
        
     }
 
-     .footer{
+    .footer{
         flex-direction: column;
         gap: 8px;
         text-align: center;
@@ -237,4 +241,3 @@ img{
         margin: 0 8px;
     }
 }
-
